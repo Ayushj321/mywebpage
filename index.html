@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width-device-width,initial-scale=2.0">
+    <meta charset="UTF-8">
+    <title>Ayush Jain | Personal Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">My Personal WebPage</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home">MY PAGE</a></li>
+            <li><a href="#about">Everything About Me</a></li>
+            <li><a href="#work">My Past and ongoing Qualifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hey Guys , This is <br><span>Ayush.</span></h3>
+            <h3>I'm an IT engineer and enthusiastic coder!</h4>
+            <a href="" target="_blank" class="btn">My Homepage</a>
+        </div>
+        <div class="p50"  style="margin-top: 4em;">
+            <img src="dp.jpeg" class="proimg"  alt="Profile Photo">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>Everything About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h2>I'm a Enthusiastic coder.</h2>
+                <p style="font-size: large; padding-top: 3em;">I have been learning programming and little bit of web development for about a year now.Other than this , I also have a little bit of experience and interest in Computer Networking and Blockchain Cryptocurrency. I have also worked on some projects of cryptocurrency with my batchmates.I am from Bhopal a city also known as 'city of lakes' which is situated in the heart of Madhya Pradesh.I am a very avid learner and love to experience new skills. My hobbies other than coding are mostly in sports. I am a state level Horse ridingh champion for 2 times. I have also played in Karate open nationals.In My college i am in the football team.I have been practicing a lot and will keep doing it to turn myself into a top software developer which every software industry needs. </p>
+            </div>
+            <div class="w50">
+                <img src="about-me.jpg" class="img" alt="Quote">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="works" id="work">
+        <div class="heading white">
+            <h3>My Past and ongoing Qualifications</h3>
+        </div>
+        <div class="content">
+                <img src="skills.jpg">
+                <p>12th Completed by DPS Bhopal with 85% in PCM Stream</p>
+                <p>JEE Mains and Advance 2019 Qualified </p>
+                <p>Currently Doing my Btech Graduation in Information Technology from VIT,Vellore.Expected graduation year - 2023.</p>
+
+    <section class="contacts" id="contact">
+        <div class="contactBx">
+            <h4>AYUSH JAIN</h4>
+            <p>9653941735</p>
+            <p>ayush.jain2019@vitstudent.ac.in</p>
+            <p>Bhopal, Madhya Pradesh, 462016</p>
+
+        </div>
+        <div class="social-menu">
+            <ul>
+                <li>Facebook:<a href="https://www.facebook.com/profile.php?id=ayushj3145" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li>Github: <a href="https://github.com/" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li>Instagram: <a href="https://www.instagram.com/ayush_jain2/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               </ul>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            var header= document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY>0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        }
+        </script>
+    </body>
